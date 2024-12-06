@@ -3,7 +3,7 @@ var w = c.width = window.innerWidth,
 		ctx = c.getContext( '2d' ),
 		
 		hw = w / 2, // half-width
-		hh = h / 4 + 10,
+		hh = h / 3,
 		
 		opts = {
 			strings: [ 'HAPPY', 'BIRTHDAY!'],
