@@ -3,7 +3,7 @@ var w = c.width = window.innerWidth,
 		ctx = c.getContext( '2d' ),
 		
 		hw = w / 2, // half-width
-		hh = h / 2 - 250,
+		hh = h / 2 - 290,
 		
 		opts = {
 			strings: [ 'HAPPY', 'BIRTHDAY!'],
@@ -282,7 +282,7 @@ Letter.prototype.step = function(){
 			
 			ctx.fillStyle = this.color;
 			ctx.beginPath();
-			generateBalloonPath( this.cx, this.cy, this.size );
+			generateBalloonPath( this.cx +20, this.cy+20, this.size );
 			ctx.fill();
 			
 			ctx.beginPath();

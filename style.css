@@ -26,7 +26,7 @@ body {
 	overflow: hidden;
 }
 
-/* Các CSS chung */
+/* Các CSS chung
 body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
@@ -38,7 +38,7 @@ body {
 	padding: 20px;
   }
   
-  /* Media Query cho màn hình nhỏ hơn 768px */
+ 
   @media (max-width: 768px) {
 	body {
 	  font-size: 14px;
@@ -60,12 +60,12 @@ body {
   }
   
   .item {
-	flex: 1 1 calc(50% - 10px); /* Mỗi item chiếm 50% chiều rộng */
+	flex: 1 1 calc(50% - 10px);
   }
   
   @media (max-width: 768px) {
 	.item {
-	  flex: 1 1 100%; /* Mỗi item chiếm toàn bộ chiều rộng */
+	  flex: 1 1 100%;
 	}
   }
   img, video {
@@ -73,12 +73,11 @@ body {
 	height: auto;
   }
   body {
-	font-size: 1rem; /* 1rem = 16px mặc định trên hầu hết các trình duyệt */
+	font-size: 1rem; 
   }
   
   @media (max-width: 768px) {
 	body {
-	  font-size: 0.9rem; /* Giảm kích thước chữ trên màn hình nhỏ */
+	  font-size: 0.9rem; 
 	}
-  }
-  
+  } 
