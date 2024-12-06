@@ -282,7 +282,7 @@ Letter.prototype.step = function(){
 			
 			ctx.fillStyle = this.color;
 			ctx.beginPath();
-			generateBalloonPath( this.cx +20, this.cy+20, this.size );
+			generateBalloonPath( this.cx +5, this.cy+5, this.size );
 			ctx.fill();
 			
 			ctx.beginPath();
