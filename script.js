@@ -3,7 +3,7 @@ var w = c.width = window.innerWidth,
 		ctx = c.getContext( '2d' ),
 		
 		hw = w / 2, // half-width
-		hh = h / 2 - 200,
+		hh = h / 2 - 250,
 		
 		opts = {
 			strings: [ 'HAPPY', 'BIRTHDAY!'],
@@ -86,7 +86,6 @@ Letter.prototype.reset = function(){
 	this.lineWidth = opts.fireworkBaseLineWidth + opts.fireworkAddedLineWidth * Math.random();
 	this.prevPoints = [ [ 0, hh, 0 ] ];
 }
-
 Letter.prototype.step = function(){
 	
 	if( this.phase === 'firework' ){
@@ -107,7 +106,7 @@ Letter.prototype.step = function(){
 			var linearProportion = this.tick / this.reachTime,
 					armonicProportion = Math.sin( linearProportion * TauQuarter ),
 					
-					x = linearProportion * this.x;
+					x = linearProportion * this.x,
 					y = hh + armonicProportion * this.fireworkDy;
 			
 			if( this.prevPoints.length > opts.fireworkPrevPoints )
@@ -159,7 +158,7 @@ Letter.prototype.step = function(){
 					x = x * cos - y * sin;
 					y = y * cos + x1 * sin;
 					
-					this.shards.push( new Shard( this.x , this.y, x, y, this.alphaColor ) );
+					this.shards.push( new Shard( this.x, this.y, x, y, this.alphaColor ) );
 				}
 			}
 			
