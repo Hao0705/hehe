@@ -25,3 +25,60 @@ p > a:first-of-type {
 body {
 	overflow: hidden;
 }
+
+/* Các CSS chung */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+  }
+  
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  /* Media Query cho màn hình nhỏ hơn 768px */
+  @media (max-width: 768px) {
+	body {
+	  font-size: 14px;
+	}
+  
+	.container {
+	  padding: 10px;
+	}
+  
+	.menu {
+	  display: flex;
+	  flex-direction: column;
+	}
+  }
+  .container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+  }
+  
+  .item {
+	flex: 1 1 calc(50% - 10px); /* Mỗi item chiếm 50% chiều rộng */
+  }
+  
+  @media (max-width: 768px) {
+	.item {
+	  flex: 1 1 100%; /* Mỗi item chiếm toàn bộ chiều rộng */
+	}
+  }
+  img, video {
+	max-width: 100%;
+	height: auto;
+  }
+  body {
+	font-size: 1rem; /* 1rem = 16px mặc định trên hầu hết các trình duyệt */
+  }
+  
+  @media (max-width: 768px) {
+	body {
+	  font-size: 0.9rem; /* Giảm kích thước chữ trên màn hình nhỏ */
+	}
+  }
+  
