@@ -59,7 +59,7 @@ ctx.font = opts.charSize + 'px Verdana';
 
 function Letter( char, x, y ){
 	this.char = char;
-	this.x = x+100;
+	this.x = x+200;
 	this.y = y;
 	
 	this.dx = -ctx.measureText( char ).width / 2;
