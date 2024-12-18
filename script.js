@@ -8,7 +8,7 @@ var w = c.width = window.innerWidth,
 		opts = {
 			strings: ['Chúc Nam may mắn','Lần sau :))'],
 			charSize: 30,
-			charSpacing: 20,
+			charSpacing: 18,
 			lineHeight: 40,
 			
 			cx: w / 2 ,
@@ -59,7 +59,7 @@ ctx.font = opts.charSize + 'px Verdana';
 
 function Letter( char, x, y ){
 	this.char = char;
-	this.x = x;
+	this.x = x+100;
 	this.y = y;
 	
 	this.dx = -ctx.measureText( char ).width / 2;
