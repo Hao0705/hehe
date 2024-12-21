@@ -6,7 +6,7 @@ var w = c.width = window.innerWidth,
 		hh = h / 2.8,
 		
 		opts = {
-			strings: ['Chúc mừng a ttai',''],
+			strings: ['Chúc mừng anh ttai',''],
 			charSize: 30,
 			charSpacing: 18,
 			lineHeight: 40,
